@@ -1,8 +1,8 @@
 # NHẬT KÝ THỰC HIỆN LAB 6 (LOGBOOK)
 
-* **Họ và tên:** 
-* **Mã sinh viên:** 
-* **Link Repository cá nhân:** 
+* **Họ và tên:** Lê Trương Duy
+* **Mã sinh viên:** PS51254
+* **Link Repository cá nhân:** https://github.com/wyuiwyud/COM108-LAB6-PS51254-TRUONGDUY
 
 > [!NOTE]
 > **HƯỚNG DẪN DÀNH CHO KỶ NGUYÊN AI:**  
@@ -16,13 +16,16 @@
 - Lỗi phát hiện qua Test (nếu có): 
 - Cách sửa / Bài học: 
 
+
 ### Lần 2: Bài 1
 - Trạng thái: 
 - Lỗi / Cách sửa: 
 
+
 ### Lần 3: Bài 1 (Dự phòng)
 - Trạng thái: 
 - Lỗi / Cách sửa: 
+
 
 ---
 
@@ -32,13 +35,16 @@
 - Lỗi phát hiện qua Test (nếu có): 
 - Cách sửa / Bài học: 
 
+
 ### Lần 5: Bài 2
 - Trạng thái: 
 - Lỗi / Cách sửa: 
 
+
 ### Lần 6: Bài 2 (Dự phòng)
 - Trạng thái: 
 - Lỗi / Cách sửa: 
+
 
 ---
 
@@ -48,13 +54,16 @@
 - Lỗi phát hiện qua Test (nếu có): 
 - Cách sửa / Bài học: 
 
+
 ### Lần 8: Bài 3
 - Trạng thái: 
 - Lỗi / Cách sửa: 
 
+
 ### Lần 9: Bài 3 (Dự phòng)
 - Trạng thái: 
 - Lỗi / Cách sửa: 
+
 
 ---
 
@@ -64,14 +73,18 @@
 - Lỗi phát hiện qua Test (nếu có): 
 - Cách sửa / Bài học: 
 
+
 ### Lần 11: Bài 4
 - Trạng thái: 
 - Lỗi / Cách sửa: 
 
-### Lần 12: Bài 4
+
+### Lần 12: Bài 4 (Dự phòng)
 - Trạng thái: 
 - Lỗi / Cách sửa: 
+
 
 ### Lần 13: Bài 4 (Dự phòng)
 - Trạng thái: 
 - Lỗi / Cách sửa: 
+
