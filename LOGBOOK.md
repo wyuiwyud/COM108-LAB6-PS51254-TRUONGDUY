@@ -11,15 +11,15 @@
 ---
 
 ### Lần 1: Bài 1 - Bộ Lọc Làm Mịn Tín Hiệu (Moving Average)
-- Trạng thái: Chờ chấm
-- Prompt hỏi AI (nếu có): 
-- Lỗi phát hiện qua Test (nếu có): 
-- Cách sửa / Bài học: 
+- Trạng thái: FAILED (Test 2)
+- Prompt hỏi AI (nếu có): "Viết hàm lamMinTinHieu(float raw[], float smooth[], int n) lọc trung bình trượt cửa sổ k=3 cho mảng float trong C, xử lý 2 đầu mút chia 2 và ở giữa chia 3"
+- Lỗi phát hiện qua Test (nếu có): FAILED Test 2 (Bay AI bien n=1): Expected 42.00, Actual 21.00. Do AI sinh code không kiểm tra trường hợp n=1 khiến truy cập tràn mảng raw[1].
+- Cách sửa / Bài học: Cần tự kiểm tra trường hợp biên n=1. Bổ sung điều kiện kiểm tra if (n == 1) { smooth[0] = raw[0]; return; } ở đầu hàm.
 
 
 ### Lần 2: Bài 1
-- Trạng thái: 
-- Lỗi / Cách sửa: 
+- Trạng thái: Chờ sửa
+- Lỗi / Cách sửa: Đang bổ sung kiểm tra biên n=1
 
 
 ### Lần 3: Bài 1 (Dự phòng)
