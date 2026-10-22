@@ -38,6 +38,11 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 void lamMinTinHieu(float raw[], float smooth[], int n) {
+    if (n <= 0) return;
+    if (n == 1) {
+        smooth[0] = raw[0];
+        return;
+    }
     smooth[0] = (raw[0] + raw[1]) / 2.0f;
     for (int i = 1; i <= n - 2; i++) {
         smooth[i] = (raw[i - 1] + raw[i] + raw[i + 1]) / 3.0f;

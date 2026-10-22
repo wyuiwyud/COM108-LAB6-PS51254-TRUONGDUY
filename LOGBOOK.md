@@ -18,12 +18,12 @@
 
 
 ### Lần 2: Bài 1
-- Trạng thái: Chờ sửa
-- Lỗi / Cách sửa: Đang bổ sung kiểm tra biên n=1
+- Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
+- Lỗi / Cách sửa: Bổ sung if (n == 1) smooth[0] = raw[0]; và chạy test_bai1.c cục bộ đã PASS 100% tất cả test cases.
 
 
 ### Lần 3: Bài 1 (Dự phòng)
-- Trạng thái: 
+- Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
 
 
