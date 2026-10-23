@@ -45,17 +45,20 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 void lamMoMaTran(int src[][MAX_COLS], int dest[][MAX_COLS], int row, int col) {
+    if (row <= 0 || col <= 0) return;
     for (int i = 0; i < row; i++) {
         for (int j = 0; j < col; j++) {
             int tong = 0;
+            int count = 0;
             for (int r = i - 1; r <= i + 1; r++) {
                 for (int c = j - 1; c <= j + 1; c++) {
                     if (r >= 0 && r < row && c >= 0 && c < col) {
                         tong += src[r][c];
+                        count++;
                     }
                 }
             }
-            dest[i][j] = tong / 9; // Lỗi AI: chia cứng cho 9 của cửa sổ 3x3
+            dest[i][j] = (count > 0) ? (tong / count) : 0;
         }
     }
 }

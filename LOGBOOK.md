@@ -56,8 +56,8 @@
 
 
 ### Lần 8: Bài 3
-- Trạng thái: Chờ sửa
-- Lỗi / Cách sửa: Đang đếm số ô thực tế để chia trung bình
+- Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
+- Lỗi / Cách sửa: Đã thêm biến count đếm số ô hợp lệ và tính dest[i][j] = (count > 0) ? (tong / count) : 0;. Chạy test_bai3.c đã PASS 100%.
 
 
 ### Lần 9: Bài 3 (Dự phòng)
