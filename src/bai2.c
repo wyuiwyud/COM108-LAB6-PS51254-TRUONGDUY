@@ -55,6 +55,7 @@ int main() {
 #endif
 
 // --- SINH VIÊN VIẾT CODE CỦA 2 HÀM DƯỚI ĐÂY ---
+// Hàm nén sai phân: delta[0] = goc[0], delta[i] = goc[i] - goc[i-1] (ho tro tot ca gia tri am)
 void nenDelta(int goc[], int delta[], int n) {
     if (n <= 0) return;
     delta[0] = goc[0];
@@ -63,6 +64,7 @@ void nenDelta(int goc[], int delta[], int n) {
     }
 }
 
+// Hàm giải nén: khoiPhuc[0] = delta[0], khoiPhuc[i] = khoiPhuc[i-1] + delta[i]
 void giaiNenDelta(int delta[], int khoiPhuc[], int n) {
     if (n <= 0) return;
     khoiPhuc[0] = delta[0];

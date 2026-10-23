@@ -37,12 +37,12 @@
 
 
 ### Lần 5: Bài 2
-- Trạng thái: Chờ kiểm thử bổ sung
-- Lỗi / Cách sửa: 
+- Trạng thái: Hoàn thiện (Đã kiểm tra biên mảng âm và n=1)
+- Lỗi / Cách sửa: Bổ sung chú thích giải thuật và chạy kiểm thử dữ liệu đo đạc âm lớn, xác nhận hoạt động ổn định.
 
 
 ### Lần 6: Bài 2 (Dự phòng)
-- Trạng thái: 
+- Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
 
 
