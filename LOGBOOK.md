@@ -49,15 +49,15 @@
 ---
 
 ### Lần 7: Bài 3 - Bộ Lọc Làm Mờ Điểm Ảnh (Box Blur Filter 3x3)
-- Trạng thái: 
-- Prompt hỏi AI (nếu có): 
-- Lỗi phát hiện qua Test (nếu có): 
-- Cách sửa / Bài học: 
+- Trạng thái: FAILED (Test 1)
+- Prompt hỏi AI (nếu có): "Viết hàm lamMoMaTran(int src[][MAX_COLS], int dest[][MAX_COLS], int row, int col) làm mờ ma trận bằng bộ lọc Box Blur 3x3 trong C"
+- Lỗi phát hiện qua Test (nếu có): FAILED Test 1 (3x3): Tại dest[0][0] Expected 30, Actual 13. Nguyên nhân do AI chia cố định cho 9 của cửa sổ 3x3 mà quên rằng các ô góc và biên có số ô lân cận ít hơn (4 ô hoặc 6 ô).
+- Cách sửa / Bài học: Cần khai báo biến count đếm số lượng ô lân cận thực tế hợp lệ (nằm trong phạm vi ma trận), sau đó lấy tong / count thay vì chia cứng cho 9.
 
 
 ### Lần 8: Bài 3
-- Trạng thái: 
-- Lỗi / Cách sửa: 
+- Trạng thái: Chờ sửa
+- Lỗi / Cách sửa: Đang đếm số ô thực tế để chia trung bình
 
 
 ### Lần 9: Bài 3 (Dự phòng)

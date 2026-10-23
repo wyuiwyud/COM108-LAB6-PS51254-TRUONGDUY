@@ -45,13 +45,17 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 void lamMoMaTran(int src[][MAX_COLS], int dest[][MAX_COLS], int row, int col) {
-    // TODO: Áp dụng bộ lọc làm mờ Box Blur 3x3 cho ma trận ảnh src lưu sang dest
-    // Với mỗi ô (i, j):
-    //   - Xét các ô lân cận (r, c) trong phạm vi [i-1 .. i+1] và [j-1 .. j+1]
-    //   - CHỈ lấy các ô hợp lệ: 0 <= r < row và 0 <= c < col
-    //   - Tính: dest[i][j] = tong_cac_o_hop_le / so_luong_o_hop_le (phép chia nguyên)
-    // Giữ nguyên ma trận gốc src.
-    // LƯU Ý: Cực kỳ cẩn thận xử lý biên (ô góc có 4 lân cận, ô cạnh có 6 lân cận, ô tâm có 9 lân cận)
-    // Tuyệt đối không dùng lệnh in ra màn hình bên trong hàm này!
-    
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            int tong = 0;
+            for (int r = i - 1; r <= i + 1; r++) {
+                for (int c = j - 1; c <= j + 1; c++) {
+                    if (r >= 0 && r < row && c >= 0 && c < col) {
+                        tong += src[r][c];
+                    }
+                }
+            }
+            dest[i][j] = tong / 9; // Lỗi AI: chia cứng cho 9 của cửa sổ 3x3
+        }
+    }
 }
