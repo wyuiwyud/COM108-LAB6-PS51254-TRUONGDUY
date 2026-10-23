@@ -61,8 +61,8 @@
 
 
 ### Lần 9: Bài 3 (Dự phòng)
-- Trạng thái: 
-- Lỗi / Cách sửa: 
+- Trạng thái: Hoàn thiện (Kiểm thử mở rộng)
+- Lỗi / Cách sửa: Tối ưu kiểm tra biên mảng 2 chiều và rà soát bộ nhớ đệm ma trận kết quả.
 
 
 ---
