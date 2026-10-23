@@ -30,14 +30,14 @@
 ---
 
 ### Lần 4: Bài 2 - Nén Sai Phân Dữ Liệu IoT (Delta Encoding)
-- Trạng thái: 
-- Prompt hỏi AI (nếu có): 
-- Lỗi phát hiện qua Test (nếu có): 
-- Cách sửa / Bài học: 
+- Trạng thái: Hoàn thành (PASS)
+- Prompt hỏi AI (nếu có): "Viết hai hàm nenDelta(int goc[], int delta[], int n) và giaiNenDelta(int delta[], int khoiPhuc[], int n) trong C. Chú ý xử lý đúng mảng n=1 và số âm."
+- Lỗi phát hiện qua Test (nếu có): Không có. Rút kinh nghiệm sâu sắc từ Bài 1, em đã tự tay rà soát và kiểm tra cẩn thận trường hợp n=1 và giá trị âm trước khi nộp.
+- Cách sửa / Bài học: Hiểu rõ thuật toán nén sai phân: delta[i] = goc[i] - goc[i-1], giải nén bằng cách cộng dồn lũy kế khoiPhuc[i] = khoiPhuc[i-1] + delta[i].
 
 
 ### Lần 5: Bài 2
-- Trạng thái: 
+- Trạng thái: Chờ kiểm thử bổ sung
 - Lỗi / Cách sửa: 
 
 

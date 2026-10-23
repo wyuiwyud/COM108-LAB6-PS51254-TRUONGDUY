@@ -56,17 +56,17 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA 2 HÀM DƯỚI ĐÂY ---
 void nenDelta(int goc[], int delta[], int n) {
-    // TODO: Nén mảng goc[] thành mảng sai phân delta[]
-    // - delta[0] = goc[0]
-    // - Với i >= 1: delta[i] = goc[i] - goc[i-1]
-    // LƯU Ý: Không dùng lệnh in ra màn hình bên trong hàm
-    
+    if (n <= 0) return;
+    delta[0] = goc[0];
+    for (int i = 1; i < n; i++) {
+        delta[i] = goc[i] - goc[i - 1];
+    }
 }
 
 void giaiNenDelta(int delta[], int khoiPhuc[], int n) {
-    // TODO: Khôi phục mảng gốc từ mảng delta[]
-    // - khoiPhuc[0] = delta[0]
-    // - Với i >= 1: khoiPhuc[i] = khoiPhuc[i-1] + delta[i]
-    // LƯU Ý: Không dùng lệnh in ra màn hình bên trong hàm
-    
+    if (n <= 0) return;
+    khoiPhuc[0] = delta[0];
+    for (int i = 1; i < n; i++) {
+        khoiPhuc[i] = khoiPhuc[i - 1] + delta[i];
+    }
 }
