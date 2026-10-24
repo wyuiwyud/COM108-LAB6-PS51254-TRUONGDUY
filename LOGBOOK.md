@@ -16,16 +16,13 @@
 - Lỗi phát hiện qua Test (nếu có): FAILED Test 2 (Bay AI bien n=1): Expected 42.00, Actual 21.00. Do AI sinh code không kiểm tra trường hợp n=1 khiến truy cập tràn mảng raw[1].
 - Cách sửa / Bài học: Cần tự kiểm tra trường hợp biên n=1. Bổ sung điều kiện kiểm tra if (n == 1) { smooth[0] = raw[0]; return; } ở đầu hàm.
 
-
 ### Lần 2: Bài 1
 - Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
 - Lỗi / Cách sửa: Bổ sung if (n == 1) smooth[0] = raw[0]; và chạy test_bai1.c cục bộ đã PASS 100% tất cả test cases.
 
-
 ### Lần 3: Bài 1 (Dự phòng)
 - Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
-
 
 ---
 
@@ -35,16 +32,13 @@
 - Lỗi phát hiện qua Test (nếu có): Không có. Rút kinh nghiệm sâu sắc từ Bài 1, em đã tự tay rà soát và kiểm tra cẩn thận trường hợp n=1 và giá trị âm trước khi nộp.
 - Cách sửa / Bài học: Hiểu rõ thuật toán nén sai phân: delta[i] = goc[i] - goc[i-1], giải nén bằng cách cộng dồn lũy kế khoiPhuc[i] = khoiPhuc[i-1] + delta[i].
 
-
 ### Lần 5: Bài 2
-- Trạng thái: Hoàn thiện (Đã kiểm tra biên mảng âm và n=1)
-- Lỗi / Cách sửa: Bổ sung chú thích giải thuật và chạy kiểm thử dữ liệu đo đạc âm lớn, xác nhận hoạt động ổn định.
-
+- Trạng thái: Không cần dùng
+- Lỗi / Cách sửa: 
 
 ### Lần 6: Bài 2 (Dự phòng)
 - Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
-
 
 ---
 
@@ -54,16 +48,13 @@
 - Lỗi phát hiện qua Test (nếu có): FAILED Test 1 (3x3): Tại dest[0][0] Expected 30, Actual 13. Nguyên nhân do AI chia cố định cho 9 của cửa sổ 3x3 mà quên rằng các ô góc và biên có số ô lân cận ít hơn (4 ô hoặc 6 ô).
 - Cách sửa / Bài học: Cần khai báo biến count đếm số lượng ô lân cận thực tế hợp lệ (nằm trong phạm vi ma trận), sau đó lấy tong / count thay vì chia cứng cho 9.
 
-
 ### Lần 8: Bài 3
 - Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
 - Lỗi / Cách sửa: Đã thêm biến count đếm số ô hợp lệ và tính dest[i][j] = (count > 0) ? (tong / count) : 0;. Chạy test_bai3.c đã PASS 100%.
 
-
 ### Lần 9: Bài 3 (Dự phòng)
-- Trạng thái: Hoàn thiện (Kiểm thử mở rộng)
-- Lỗi / Cách sửa: Tối ưu kiểm tra biên mảng 2 chiều và rà soát bộ nhớ đệm ma trận kết quả.
-
+- Trạng thái: Không cần dùng
+- Lỗi / Cách sửa: 
 
 ---
 
@@ -73,18 +64,14 @@
 - Lỗi phát hiện qua Test (nếu có): FAILED Test 3 (Bay AI ma tran phang): Expected 0, Actual 4. Do AI viết điều kiện kiểm tra chỉ loại khi nhỏ hơn hẳn (a[i][j] < a[ni][nj]), dẫn đến khi ma trận phẳng (các ô bằng nhau), tất cả đều bị nhận nhầm là Peak.
 - Cách sửa / Bài học: Cần tuân thủ quy tắc "lớn hơn nghiêm ngặt" (>). Nếu ô hiện tại nhỏ hơn HOẶC BẰNG bất kỳ ô lân cận nào (a[i][j] <= a[ni][nj]) thì không được coi là điểm nóng (isPeak = 0).
 
-
 ### Lần 11: Bài 4
 - Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
 - Lỗi / Cách sửa: Đổi điều kiện kiểm tra lân cận thành if (a[i][j] <= a[ni][nj]) { isPeak = 0; break; }. Chạy test_bai4.c cục bộ đạt 100% test cases.
-
 
 ### Lần 12: Bài 4 (Dự phòng)
 - Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
 
-
 ### Lần 13: Bài 4 (Dự phòng)
 - Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
-
