@@ -75,16 +75,16 @@
 
 
 ### Lần 11: Bài 4
-- Trạng thái: Chờ sửa
-- Lỗi / Cách sửa: Đang đổi điều kiện sang lớn hơn nghiêm ngặt
+- Trạng thái: Sửa lỗi lần 2 (Đã PASS test cục bộ)
+- Lỗi / Cách sửa: Đổi điều kiện kiểm tra lân cận thành if (a[i][j] <= a[ni][nj]) { isPeak = 0; break; }. Chạy test_bai4.c cục bộ đạt 100% test cases.
 
 
 ### Lần 12: Bài 4 (Dự phòng)
-- Trạng thái: 
+- Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
 
 
 ### Lần 13: Bài 4 (Dự phòng)
-- Trạng thái: 
+- Trạng thái: Không cần dùng
 - Lỗi / Cách sửa: 
 

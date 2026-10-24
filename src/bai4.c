@@ -48,6 +48,7 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 int doDiemNong(int a[][MAX_COLS], int row, int col, int hangPeak[], int cotPeak[], int nhietDoPeak[]) {
+    if (row <= 0 || col <= 0) return 0;
     int count = 0;
     int dr[] = {-1, 1, 0, 0};
     int dc[] = {0, 0, -1, 1};
@@ -59,8 +60,8 @@ int doDiemNong(int a[][MAX_COLS], int row, int col, int hangPeak[], int cotPeak[
                 int ni = i + dr[k];
                 int nj = j + dc[k];
                 if (ni >= 0 && ni < row && nj >= 0 && nj < col) {
-                    // Lỗi AI bẫy: chỉ loại khi nhỏ hơn hẳn, bỏ quên trường hợp bằng nhau
-                    if (a[i][j] < a[ni][nj]) {
+                    // Lớn hơn nghiêm ngặt (>): nếu nhỏ hơn hoặc bằng ô lân cận thì không phải Peak
+                    if (a[i][j] <= a[ni][nj]) {
                         isPeak = 0;
                         break;
                     }
