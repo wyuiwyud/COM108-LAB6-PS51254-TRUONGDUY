@@ -48,15 +48,31 @@ int main() {
 
 // --- SINH VIÊN VIẾT CODE CỦA HÀM DƯỚI ĐÂY ---
 int doDiemNong(int a[][MAX_COLS], int row, int col, int hangPeak[], int cotPeak[], int nhietDoPeak[]) {
-    // TODO: Quét ma trận nhiệt độ a[][], tìm tất cả các "Điểm nóng" (Peak)
-    // Một ô (i, j) là Điểm nóng nếu giá trị của nó LỚN HƠN NGHIÊM NGẶT (>) tất cả
-    // các ô lân cận trực tiếp theo 4 hướng (trên, dưới, trái, phải) tồn tại trong ma trận.
-    // Lưu tọa độ vào hangPeak[], cotPeak[], giá trị vào nhietDoPeak[]
-    // Trả về tổng số lượng điểm nóng tìm thấy.
-    // LƯU Ý KỸ THUẬT:
-    // - Ma trận có thể có giá trị âm (kho lạnh).
-    // - Các ô ở góc/mép chỉ so sánh với các ô lân cận thực tế tồn tại.
-    // - Tuyệt đối không dùng lệnh in ra màn hình bên trong hàm này!
-    
-    return 0;
+    int count = 0;
+    int dr[] = {-1, 1, 0, 0};
+    int dc[] = {0, 0, -1, 1};
+
+    for (int i = 0; i < row; i++) {
+        for (int j = 0; j < col; j++) {
+            int isPeak = 1;
+            for (int k = 0; k < 4; k++) {
+                int ni = i + dr[k];
+                int nj = j + dc[k];
+                if (ni >= 0 && ni < row && nj >= 0 && nj < col) {
+                    // Lỗi AI bẫy: chỉ loại khi nhỏ hơn hẳn, bỏ quên trường hợp bằng nhau
+                    if (a[i][j] < a[ni][nj]) {
+                        isPeak = 0;
+                        break;
+                    }
+                }
+            }
+            if (isPeak) {
+                hangPeak[count] = i;
+                cotPeak[count] = j;
+                nhietDoPeak[count] = a[i][j];
+                count++;
+            }
+        }
+    }
+    return count;
 }

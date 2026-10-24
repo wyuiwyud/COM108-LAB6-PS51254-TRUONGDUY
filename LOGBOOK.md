@@ -68,15 +68,15 @@
 ---
 
 ### Lần 10: Bài 4 - Radar Dò Điểm Nóng (Thermal Peak Detection)
-- Trạng thái: 
-- Prompt hỏi AI (nếu có): 
-- Lỗi phát hiện qua Test (nếu có): 
-- Cách sửa / Bài học: 
+- Trạng thái: FAILED (Test 3)
+- Prompt hỏi AI (nếu có): "Viết hàm doDiemNong quét ma trận nhiệt độ tìm các điểm nóng lớn hơn 4 hướng lân cận trên dưới trái phải trong C"
+- Lỗi phát hiện qua Test (nếu có): FAILED Test 3 (Bay AI ma tran phang): Expected 0, Actual 4. Do AI viết điều kiện kiểm tra chỉ loại khi nhỏ hơn hẳn (a[i][j] < a[ni][nj]), dẫn đến khi ma trận phẳng (các ô bằng nhau), tất cả đều bị nhận nhầm là Peak.
+- Cách sửa / Bài học: Cần tuân thủ quy tắc "lớn hơn nghiêm ngặt" (>). Nếu ô hiện tại nhỏ hơn HOẶC BẰNG bất kỳ ô lân cận nào (a[i][j] <= a[ni][nj]) thì không được coi là điểm nóng (isPeak = 0).
 
 
 ### Lần 11: Bài 4
-- Trạng thái: 
-- Lỗi / Cách sửa: 
+- Trạng thái: Chờ sửa
+- Lỗi / Cách sửa: Đang đổi điều kiện sang lớn hơn nghiêm ngặt
 
 
 ### Lần 12: Bài 4 (Dự phòng)
